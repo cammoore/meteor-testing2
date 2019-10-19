@@ -37,6 +37,6 @@
     "start": "meteor --no-release-check --settings ../config/settings.development.json",
     "lint": "eslint --quiet --ext .jsx --ext .js ./imports",
     "pretest": "npm run lint",
-    "test": "TEST_BROWSER_DRIVER=nightmare meteor test --once --driver-package dispatch:mocha --port 3100"
+    "test": "TEST_CLIENT=0 TEST_BROWSER_DRIVER=nightmare meteor test --once --driver-package dispatch:mocha --port 3100"
   }
 }
